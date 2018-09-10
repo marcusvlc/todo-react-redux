@@ -17,8 +17,11 @@ class TaskList extends Component {
                   <tbody>
                     {
                     
-                  this.props.tasks.map((task, index)=><Task key={index} task={task}/>)
-                    
+                 this.props.tasks.map((task, index)=><Task key={index} task={task.text} id={task.id}/>)
+                 
+                 
+                 
+
                     }
                   </tbody>
               </table>

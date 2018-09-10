@@ -8,12 +8,11 @@ class Task extends Component {
         return(
             <tr>
                 <td>
-
-                    {this.props.task}
+                    {this.props.id} - {this.props.task}
                 </td>
 
                 <td>
-                    <button onClick={() => {this.props.deleteTask(this.props.task)}}>Excluir Tarefa</button>
+                    <button onClick={() => {this.props.deleteTask(this.props.id)}}>Excluir Tarefa</button>
                 </td>
 
             </tr>
